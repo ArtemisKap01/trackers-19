@@ -19,28 +19,28 @@ public class quizpanel extends JPanel {
 	JRadioButton btn1a, btn1b, btn2a, btn2b, btn3a, btn3b, btn4a, btn4b, btn5a, btn5b, btn6a, btn6b, btn7a, btn7b, btn8a, btn8b, btn9a, btn9b, btn10a, btn10b, btncon1, btncon2;
 	ButtonGroup bg, bg2, bg3, bg4, bg5 ,bg6, bg7, bg8, bg9, bg10, bgcon;
 	  //Strings for Jbuttons//
-	   String ap101[] = {"Ναι"};
-       String ap102[] = {"Όχι"};
-       String ap201[] = {"Ναι"};
-       String ap202[] = {"Όχι"};
-       String ap301[] = {"Ναι"};
-       String ap302[] = {"Όχι"};
-       String ap401[] = {"Ναι"};
-       String ap402[] = {"Όχι"};
-       String ap501[] = {"Ναι"};
-       String ap502[] = {"Όχι"};
-       String ap601[] = {"Ναι"};
-       String ap602[] = {"Όχι"};
-       String ap701[] = {"Ναι"};
-       String ap702[] = {"Όχι"};
-       String ap801[] = {"Ναι"};
-       String ap802[] = {"Όχι"};
-       String ap901[] = {"Ναι"};
-       String ap902[] = {"Όχι"};
-       String ap1001[] = {"Ναι"};
-       String ap1002[] = {"Όχι"};
-       String apcon1[] = {"Ναι"}; 
-       String apcon2[] = {"Όχι"}; 
+	   String ap101[] = {"ΞΞ±ΞΉ"};
+       String ap102[] = {"ΞΟ‡ΞΉ"};
+       String ap201[] = {"ΞΞ±ΞΉ"};
+       String ap202[] = {"ΞΟ‡ΞΉ"};
+       String ap301[] = {"ΞΞ±ΞΉ"};
+       String ap302[] = {"ΞΟ‡ΞΉ"};
+       String ap401[] = {"ΞΞ±ΞΉ"};
+       String ap402[] = {"ΞΞ±ΞΉ"};
+       String ap501[] = {"ΞΞ±ΞΉ"};
+       String ap502[] = {"ΞΞ±ΞΉ"};
+       String ap601[] = {"ΞΞ±ΞΉ"};
+       String ap602[] = {"ΞΟ‡ΞΉ"};
+       String ap701[] = {"ΞΞ±ΞΉ"};
+       String ap702[] = {"ΞΟ‡ΞΉ"};
+       String ap801[] = {"ΞΞ±ΞΉ"};
+       String ap802[] = {"ΞΟ‡ΞΉ"};
+       String ap901[] = {"ΞΞ±ΞΉ"};
+       String ap902[] = {"ΞΟ‡ΞΉ"};
+       String ap1001[] = {"ΞΞ±ΞΉ"};
+       String ap1002[] = {"ΞΟ‡ΞΉ"};
+       String apcon1[] = {"ΞΞ±ΞΉ"}; 
+       String apcon2[] = {"ΞΟ‡ΞΉ"}; 
        
 	/**
 	 * Create the panel.
@@ -179,56 +179,56 @@ public class quizpanel extends JPanel {
   bgcon.add(btncon2);
    
 //Button Initialization//
-  button = new JButton("Υποβολή");
+  button = new JButton("Γ•Γ°Γ―ΓΆΓ―Γ«Γ");
   button.addMouseListener(new MouseAdapter() {
   	@Override
   	public void mouseClicked(MouseEvent e) {
   		//Positive//
   		if((btncon1.isSelected()) && (btn1a.isSelected())  && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected()) && (btn5a.isSelected())&& (btn6a.isSelected())&& (btn7a.isSelected())&& (btn8a.isSelected())&& (btn9a.isSelected())&& (btn10a.isSelected())) {
-		      JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+		      JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
   		}
 		    if((btncon1.isSelected()) && (btn1a.isSelected()) && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected())) {
-		      JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+		      JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
 		      }
 		  //If one of the first four are picked, the teacher is required to go into quarantine for 14 days and test for Covid-19// 
 		    if (btn1a.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected()) {
-			   JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+			   JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
 		   }
 		    if(btn2a.isSelected() && btn1b.isSelected() && btn3b.isSelected() && btn4b.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+		    	JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
 		    }
 		    if (btn3a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn4b.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+		    	JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
 		    }
 		    if(  btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4a.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
+		    	JOptionPane.showMessageDialog(null, "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®!", JOptionPane.OK_OPTION);
 		    }
 		    //Additional Options//
 		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected()  && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn4b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
+		    	 JOptionPane.showMessageDialog(null,  "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®! ΞΟ€ΞΏΟ€Ο„ΞΏ ΞΊΟΞΏΟΟƒΞΌΞ±.", JOptionPane.OK_OPTION);
 		    }
 		    if (btn1a.isSelected() && btn2a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn3b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
+		    	 JOptionPane.showMessageDialog(null,  "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®! ΞΟ€ΞΏΟ€Ο„ΞΏ ΞΊΟΞΏΟΟƒΞΌΞ±.", JOptionPane.OK_OPTION);
 		    }
 		    if (btn1a.isSelected()  && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn2b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
+		    	 JOptionPane.showMessageDialog(null,  "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®! ΞΟ€ΞΏΟ€Ο„ΞΏ ΞΊΟΞΏΟΟƒΞΌΞ±.", JOptionPane.OK_OPTION);
 		    }
 		    if ( btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn1b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
+		    	 JOptionPane.showMessageDialog(null,  "ΞΞ±ΟΞ±Ξ½Ο„Ξ―Ξ½Ξ± Ξ³ΞΉΞ± 14 Ξ·ΞΌΞ­ΟΞµΟ‚ ΞΊΞ±ΞΉ Ο„ΞµΟƒΟ„ COVID-19", "Ξ ΟΞΏΟƒΞΏΟ‡Ξ®! ΞΟ€ΞΏΟ€Ο„ΞΏ ΞΊΟΞΏΟΟƒΞΌΞ±.", JOptionPane.OK_OPTION);
 		    }
 		    //Negative//
   	    if((btncon2.isSelected()) && (btn1b.isSelected()) && (btn2b.isSelected()) && (btn3b.isSelected())&& (btn4b.isSelected())&& (btn5b.isSelected())&& (btn6b.isSelected())&& (btn7b.isSelected())&& (btn8b.isSelected())&& (btn9b.isSelected())&& (btn10b.isSelected())) {
-  		 JOptionPane.showMessageDialog(null, "Παρακολουθήστε την κατάσταση της υγεία σας, σε περίπτωση εμφάνισης κάποιων συμπτωμάτων", "Ενημέρωση", JOptionPane.OK_OPTION);;
+  		 JOptionPane.showMessageDialog(null,  "Ξ Ξ±ΟΞ±ΞΊΞΏΞ»ΞΏΟ…ΞΈΞ®ΟƒΟ„Ξµ Ο„Ξ·Ξ½ ΞΊΞ±Ο„Ξ¬ΟƒΟ„Ξ±ΟƒΞ· Ο„Ξ·Ο‚ Ο…Ξ³ΞµΞ―Ξ± ΟƒΞ±Ο‚, ΟƒΞµ Ο€ΞµΟΞ―Ο€Ο„Ο‰ΟƒΞ· ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ·Ο‚ ΞΊΞ¬Ο€ΞΏΞΉΟ‰Ξ½ ΟƒΟ…ΞΌΟ€Ο„Ο‰ΞΌΞ¬Ο„Ο‰Ξ½", "Ξ•Ξ½Ξ·ΞΌΞ­ΟΟ‰ΟƒΞ·", JOptionPane.OK_OPTION);;
   	}
   	    if(btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected() && btn8a.isSelected() && btn9a.isSelected() && btn10a.isSelected()) {
-  	    	 JOptionPane.showMessageDialog(null, "Παρακολουθήστε την κατάσταση της υγεία σας, σε περίπτωση εμφάνισης άλλων συμπτωμάτων. Οι απαντήσεις που υποβάλατε, δεν αποτελούν απόδειξη θετικού κρούσματος.", "Ενημέρωση", JOptionPane.OK_OPTION);;
+  	    	 JOptionPane.showMessageDialog(null, "Ξ Ξ±ΟΞ±ΞΊΞΏΞ»ΞΏΟ…ΞΈΞ®ΟƒΟ„Ξµ Ο„Ξ·Ξ½ ΞΊΞ±Ο„Ξ¬ΟƒΟ„Ξ±ΟƒΞ· Ο„Ξ·Ο‚ Ο…Ξ³ΞµΞ―Ξ± ΟƒΞ±Ο‚, ΟƒΞµ Ο€ΞµΟΞ―Ο€Ο„Ο‰ΟƒΞ· ΞµΞΌΟ†Ξ¬Ξ½ΞΉΟƒΞ·Ο‚ Ξ¬Ξ»Ξ»Ο‰Ξ½ ΟƒΟ…ΞΌΟ€Ο„Ο‰ΞΌΞ¬Ο„Ο‰Ξ½. ΞΞΉ Ξ±Ο€Ξ±Ξ½Ο„Ξ®ΟƒΞµΞΉΟ‚ Ο€ΞΏΟ… Ο…Ο€ΞΏΞ²Ξ¬Ξ»Ξ±Ο„Ξµ, Ξ΄ΞµΞ½ Ξ±Ο€ΞΏΟ„ΞµΞ»ΞΏΟΞ½ Ξ±Ο€ΟΞ΄ΞµΞΉΞΎΞ· ΞΈΞµΟ„ΞΉΞΊΞΏΟ ΞΊΟΞΏΟΟƒΞΌΞ±Ο„ΞΏΟ‚.", "Ξ•Ξ½Ξ·ΞΌΞ­ΟΟ‰ΟƒΞ·", JOptionPane.OK_OPTION);;
   	    }
   	}
   });
   button.setBounds(225, 430, 91, 34);
   add(button);
   
-	 JLabel quizmenulbl = new JLabel("Ερωτηματολόγιο");
+	 JLabel quizmenulbl = new JLabel("Ξ•ΟΟ‰Ο„Ξ·ΞΌΞ±Ο„ΞΏΞ»ΟΞ³ΞΉΞΏ");
 	quizmenulbl.setForeground(new Color(46, 139, 87));
 	quizmenulbl.setFont(new Font("Comic Sans MS", Font.BOLD, 23));
 	quizmenulbl.setBounds(116, 22, 201, 66);
@@ -244,82 +244,82 @@ public class quizpanel extends JPanel {
 	add(lblimgqz2);
 	lblimgqz2.setIcon(new ImageIcon(qzimg2));
 	
-	JLabel lblNewLabel = new JLabel("Δηλώστε αν έχετε ενα ή παραπάνω από τα παρακάτω συμπτώματα:");
+	JLabel lblNewLabel = new JLabel("Ξ”Ξ·Ξ»ΟΟƒΟ„Ξµ Ξ±Ξ½ Ξ­Ο‡ΞµΟ„Ξµ ΞµΞ½Ξ± Ξ® Ο€Ξ±ΟΞ±Ο€Ξ¬Ξ½Ο‰ Ξ±Ο€Ο Ο„Ξ± Ο€Ξ±ΟΞ±ΞΊΞ¬Ο„Ο‰ ΟƒΟ…ΞΌΟ€Ο„ΟΞΌΞ±Ο„Ξ±:");
     lblNewLabel.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     lblNewLabel.setBounds(20, 67, 482, 28);
     add(lblNewLabel);
     
-    JLabel lblNewLabel_1 = new JLabel("Απαντάτε με ναι ή όχι στην ερώτηση για το καθένα απο αυτά.");
+    JLabel lblNewLabel_1 = new JLabel("Ξ‘Ο€Ξ±Ξ½Ο„Ξ¬Ο„Ξµ ΞΌΞµ Ξ½Ξ±ΞΉ Ξ® ΟΟ‡ΞΉ ΟƒΟ„Ξ·Ξ½ ΞµΟΟΟ„Ξ·ΟƒΞ· Ξ³ΞΉΞ± Ο„ΞΏ ΞΊΞ±ΞΈΞ­Ξ½Ξ± Ξ±Ο€ΞΏ Ξ±Ο…Ο„Ξ¬.");
     lblNewLabel_1.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     lblNewLabel_1.setBounds(20, 83, 461, 34);
     add(lblNewLabel_1);
     
-    JLabel ques1 = new JLabel("1. Bήχα");
+    JLabel ques1 = new JLabel("1. BΞ®Ο‡Ξ±"");
     ques1.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques1.setBounds(24, 164, 78, 14);
     add(ques1);
     
-    JLabel ques2 = new JLabel("2. Πυρετό");
+    JLabel ques2 = new JLabel("2. Ξ Ο…ΟΞµΟ„Ο");
     ques2.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques2.setBounds(24, 202, 78, 14);
     add(ques2);
     
-    JLabel ques3 = new JLabel("3. Δύσπνοια");
+    JLabel ques3 = new JLabel("3. Ξ”ΟΟƒΟ€Ξ½ΞΏΞΉΞ±");
     ques3.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques3.setBounds(24, 244, 99, 34);
     add(ques3);
     
-    JLabel ques4 = new JLabel("4. Αιφνίδια εκδήλωση  ");
+    JLabel ques4 = new JLabel("4. Ξ‘ΞΉΟ†Ξ½Ξ―Ξ΄ΞΉΞ± ΞµΞΊΞ΄Ξ®Ξ»Ο‰ΟƒΞ·");
     ques4.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques4.setBounds(24, 301, 232, 21);
     add(ques4);
     
-    JLabel ques5 = new JLabel("5. Διάρροια");
+    JLabel ques5 = new JLabel("5. Ξ”ΞΉΞ¬ΟΟΞΏΞΉΞ±");
     ques5.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques5.setBounds(24, 374, 78, 21);
     add(ques5);
     
-    JLabel ques6 = new JLabel("6. Εμετό");
+    JLabel ques6 = new JLabel("6. Ξ•ΞΌΞµΟ„Ο");
     ques6.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques6.setBounds(298, 168, 85, 14);
     add(ques6);
     
-    JLabel ques7 = new JLabel("7. Μυαλγίες");
+    JLabel ques7 = new JLabel("7. ΞΟ…Ξ±Ξ»Ξ³Ξ―ΞµΟ‚");
     ques7.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques7.setBounds(298, 213, 85, 14);
     add(ques7);
     
-    JLabel ques8 = new JLabel("8. Καταβολή");
+    JLabel ques8 = new JLabel("8. ΞΞ±Ο„Ξ±Ξ²ΞΏΞ»Ξ®");
     ques8.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques8.setBounds(298, 268, 85, 14);
     add(ques8);
     
-    JLabel ques9 = new JLabel("9. Ρίγος");
+    JLabel ques9 = new JLabel("9. Ξ΅Ξ―Ξ³ΞΏΟ‚");
     ques9.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques9.setBounds(308, 320, 85, 14);
     add(ques9);
     
-    JLabel ques10 = new JLabel("10. Κεφαλαλγία");
+    JLabel ques10 = new JLabel("10. ΞΞµΟ†Ξ±Ξ»Ξ±Ξ»Ξ³Ξ―Ξ±");
     ques10.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques10.setBounds(308, 370, 123, 14);
     add(ques10);
     
-    JLabel ques41 = new JLabel("ανοσμίας, αγευσίας");
+    JLabel ques41 = new JLabel("Ξ±Ξ½ΞΏΟƒΞΌΞ―Ξ±Ο‚, Ξ±Ξ³ΞµΟ…ΟƒΞ―Ξ±Ο‚");
     ques41.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques41.setBounds(34, 317, 142, 14);
     add(ques41);
     
-    JLabel ques42 = new JLabel("ή δυσγευσίας");
+    JLabel ques42 = new JLabel("Ξ® Ξ΄Ο…ΟƒΞ³ΞµΟ…ΟƒΞ―Ξ±Ο‚");
     ques42.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques42.setBounds(34, 329, 142, 14);
     add(ques42);
     
-    JLabel ques = new JLabel("Η επαφή με κρούσμα ήταν στενή; ");
+    JLabel ques = new JLabel("Ξ— ΞµΟ€Ξ±Ο†Ξ® ΞΌΞµ ΞΊΟΞΏΟΟƒΞΌΞ± Ξ®Ο„Ξ±Ξ½ ΟƒΟ„ΞµΞ½Ξ®;");
     ques.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques.setBounds(22, 114, 243, 24);
     add(ques);
     
-    JLabel inf = new JLabel("Πότε ορίζεται η στενή επαφή, βλέπετε τις οδηγίες χρήσης.");
+    JLabel inf = new JLabel("Ξ ΟΟ„Ξµ ΞΏΟΞ―Ξ¶ΞµΟ„Ξ±ΞΉ Ξ· ΟƒΟ„ΞµΞ½Ξ® ΞµΟ€Ξ±Ο†Ξ®, Ξ²Ξ»Ξ­Ο€ΞµΟ„Ξµ Ο„ΞΉΟ‚ ΞΏΞ΄Ξ·Ξ³Ξ―ΞµΟ‚ Ο‡ΟΞ®ΟƒΞ·Ο‚.");
     inf.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     inf.setBounds(24, 136, 461, 23);
     add(inf);
