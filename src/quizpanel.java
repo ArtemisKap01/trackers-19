@@ -223,6 +223,9 @@ public class quizpanel extends JPanel {
   	    if(btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected() && btn8a.isSelected() && btn9a.isSelected() && btn10a.isSelected()) {
   	    	 JOptionPane.showMessageDialog(null, "Παρακολουθήστε την κατάσταση της υγεία σας, σε περίπτωση εμφάνισης άλλων συμπτωμάτων. Οι απαντήσεις που υποβάλατε, δεν αποτελούν απόδειξη θετικού κρούσματος.", "Ενημέρωση", JOptionPane.OK_OPTION);;
   	    }
+		 else if (btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected()) {
+  		JOptionPane.showMessageDialog(null, "Παρακολουθήστε την κατάσταση της υγεία σας, σε περίπτωση εμφάνισης άλλων συμπτωμάτων. Οι απαντήσεις που υποβάλατε, δεν αποτελούν απόδειξη θετικού κρούσματος.", "Ενημέρωση", JOptionPane.OK_OPTION);;
+  	}
   	}
   });
   button.setBounds(225, 430, 91, 34);
