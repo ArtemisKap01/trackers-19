@@ -20,7 +20,8 @@ public class helppanel extends JPanel {
 	lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
 	lblNewLabel.setBounds(25, 25, 244, 32);
 	add(lblNewLabel);
-	
+	//Έδω βάζεις αύτα που έχεις γράψει(εκεί που γράφει τεστ) 
+        textField = new JTextField();
 	JTextPane txtpnDd = new JTextPane();
 	txtpnDd.setText("test");
 	txtpnDd.setBackground(new Color(222, 184, 135));
