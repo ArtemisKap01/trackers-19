@@ -15,11 +15,17 @@ public class helppanel extends JPanel {
 	setBounds(0, 0, 620, 452);
 	setLayout(null);
 	
-	JLabel lblNewLabel = new JLabel("Εγχειρίδιο/Οδηγίες χρήσης");
+	JLabel lblNewLabel = new JLabel("Ξ•Ξ³Ο‡ΞµΞΉΟΞ―Ξ΄ΞΉΞΏ/ΞΞ΄Ξ·Ξ³Ξ―ΞµΟ‚ Ο‡ΟΞ®ΟƒΞ·Ο‚");
 	lblNewLabel.setForeground(new Color(210, 105, 30));
 	lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
 	lblNewLabel.setBounds(25, 25, 244, 32);
 	add(lblNewLabel);
+	
+	JTextPane txtpnDd = new JTextPane();
+	txtpnDd.setText("test");
+	txtpnDd.setBackground(new Color(222, 184, 135));
+	txtpnDd.setBounds(35, 68, 562, 373);
+	add(txtpnDd);
 	}
 
 }
