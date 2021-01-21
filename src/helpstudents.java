@@ -19,7 +19,7 @@ public class helpstudents extends JPanel {
     setBounds(0, 0, 559, 481);
     setLayout(null);
     
-    JLabel lblNewLabel = new JLabel("����������/������� ������");
+    JLabel lblNewLabel = new JLabel("Εγχειρίδιο/Οδηγίες χρήσης");
     lblNewLabel.setForeground(new Color(210, 105, 30));
     lblNewLabel.setFont(new Font("Comic Sans MS", Font.BOLD, 24));
     lblNewLabel.setBounds(65, 28, 339, 55);
@@ -29,6 +29,13 @@ public class helpstudents extends JPanel {
     lblNewLabel_1.setBounds(10, 0, 70, 83);
     add(lblNewLabel_1);
     lblNewLabel_1.setIcon(new ImageIcon(hlpimag));
+    //Έδω βάζεις αύτα που έχεις γράψει(εκεί που γράφει τεστ) 
+    textField = new JTextField();
+    txtTest.setText("test");
+    textField.setBackground(new Color(222, 184, 135));
+    textField.setBounds(20, 94, 529, 376);
+    add(textField);
+    textField.setColumns(10);
 	}
 
 }
