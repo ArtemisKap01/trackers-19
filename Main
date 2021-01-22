@@ -1,0 +1,281 @@
+package spinelis;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Students students[] = new Students[120];
+		
+		students[0] = new Students(0,"�������","����������","30/9/1999","��������� 16",00000,"6970000000","johnmichop758@gmail.com");
+		students[1] = new Students(1,"��������","����","25/3/1999","��������� 15",00001,"6970000001","johnmichop759@gmail.com");
+		students[2] = new Students(2,"�����","��������","23/5/1999","��������� 14",00002,"6970000002","johnmichop757@gmail.com");
+		students[3] = new Students(3,"�������","nikoy","12/6/1999","��������� 13",00003,"6970000003","johnmichop731@gmail.com");
+		students[4] = new Students(4,"�����","��������","30/9/1999","��������� 12",00004,"6970000004","johnmichop721@gmail.com");
+		students[5] = new Students(5,"��������","����������","25/3/1999","��������� 11",00005,"6970000005","johnmichop787@gmail.com");
+		students[6] = new Students(6,"���������","��������������","23/5/1999","��������� 10",00006,"6970000006","johnmichop733@gmail.com");
+		students[7] = new Students(7,"�����","���������","12/6/1999","��������� 9",00007,"6970000007","johnmichop739@gmail.com");
+		students[8] = new Students(8,"��������","������","30/9/1999","��������� 8",13718,"6970000008","johnmichop788@gmail.com");
+		students[9] = new Students(9,"�������","���������","21/4/1999","��������� 7",11249,"6970000009","johnmichop711@gmail.com");
+		students[10] = new Students(10,"������������","�������������","23/12/1999","��������� 30",21343,"6970000010","johnmichop712@gmail.com");
+		students[11] = new Students(11,"������","��������","12/3/1999","��������� 31",34346,"6970000011","johnmichop799@gmail.com");
+		students[12] = new Students(12,"��������","��������","15/1/1999","��������� 45",87898,"6970000012","johnmichop700@gmail.com");
+
+		int studentCount = 13;
+		int studentIdCount = 13;
+		
+		
+		
+		Teachers teachers[] = new Teachers[100];
+		
+		teachers[0] = new Teachers(0,"Panagiotis","Kasetis", 0101010, "12/01/1972","6979087652", "panak@hotmail.com", "Andromaxis, 17");
+		teachers[1] = new Teachers(1,"Nikolaos","Houseidis",1010101,"28/07/1981","6987623946", "nickhous@gmail.com", "Rodopis, 44");
+		teachers[2] = new Teachers(2,"Eleni","Tzolaki",1234500,"30/08/1984","6943228550", "elenitzol@hotmail.com", "Afroditis 5");
+		teachers[3] = new Teachers(3,"Katerina","Papastratou",2323232,"03/12/1988","6978318212","katerinapap@gmail.com","Kalidromiou 2");
+		teachers[4] = new Teachers(4,"Manolis","Stamoulis",1231428,"10/03/1986","6971232323","manolistam@hotmail.com","Miaouli 2");
+		teachers[5] = new Teachers(5,"Anna","Saradikou",2121212,"16/06/1989","6978263251","annasarad@gmail.com","Eugenidou 12");
+		teachers[6] = new Teachers(6,"kostas","papadopoulos",6455328,"18/08/1974","6982132635","papadopoulos@gmail.com","nikolaoy 65");
+		
+		int teacherCount = 7;
+		
+		Schoolclasses schoolclass[] = new Schoolclasses[2];
+		
+		schoolclass[1] = new Schoolclasses(2020,20,20,20,20,20,20,teachers[1],teachers[2],teachers[3],teachers[4],teachers[5],teachers[6]);
+		
+		
+		
+		
+		schoolclass[1].addProtiStudent(students[0]);
+		schoolclass[1].addDeuteraStudent(students[1]);
+		schoolclass[1].addTritiStudent(students[2]);
+		schoolclass[1].addTetartiStudent(students[3]);
+		schoolclass[1].addPemptiStudent(students[4]);
+		schoolclass[1].addEktiStudent(students[5]);
+		schoolclass[1].addProtiStudent(students[6]);
+		schoolclass[1].addDeuteraStudent(students[7]);
+		schoolclass[1].addTritiStudent(students[8]);
+		schoolclass[1].addTetartiStudent(students[9]);
+		schoolclass[1].addPemptiStudent(students[10]);
+		schoolclass[1].addEktiStudent(students[11]);
+		schoolclass[1].addProtiStudent(students[12]);
+		Scanner scanner = new Scanner(System.in);
+		int choice;
+		System.out.println("��������� ������� 1 � 2: ");
+		choice = scanner.nextInt();
+		scanner.nextLine();
+		if(choice==1){
+		System.out.println("��������� 1-6 ��� ��� ���� ����(1�-6�): ");
+		
+		int inputClass2 = scanner.nextInt();
+		while(inputClass2 != 1 && inputClass2 != 2 && inputClass2 != 3 && inputClass2 != 4 && inputClass2 != 5 && inputClass2 != 6){
+			System.out.println("����� ������� ����������� ����");
+			System.out.println("��������� 1-6 ��� ��� ���� ����(1�-6�): ");
+			inputClass2 = scanner.nextInt();
+		}
+		if(inputClass2==1) {
+			if(schoolclass[1].isProtiFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isProtiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addProtiStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+			
+		} else if(inputClass2==2) {
+			if(schoolclass[1].isDeuteraFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isProtiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addDeuteraStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+			
+		}else if(inputClass2==3) {
+			if(schoolclass[1].isTritiFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isTritiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addTritiStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+			
+		}else if(inputClass2==4) {
+			if(schoolclass[1].isTetartiFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isTetartiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addTetartiStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+			
+		}else if(inputClass2==5) {
+			if(schoolclass[1].isPemptiFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isPemptiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addPemptiStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+			
+		}else if(inputClass2==6) {
+			if(schoolclass[1].isEktiFull()==true){
+				System.out.println("� ���� ����� ������");
+			}
+			else if(schoolclass[1].isEktiFull()==false) {
+				scanner.nextLine();
+				System.out.println("���� �����: ");
+				String inputName = scanner.nextLine();
+				System.out.println("���� �������: ");
+				String inputSurname = scanner.nextLine();
+				System.out.println("���� ���������� ��������(��. ��/��/����): ");
+				String inputDateOfBirth = scanner.nextLine();
+				System.out.println("���� ���������: ");
+				String inputAddress = scanner.nextLine();
+				System.out.println("���� AMKA: ");
+				int inputAmka = scanner.nextInt();
+				System.out.println("���� ��������: ");
+				String inputPhonenumber = scanner.nextLine();
+				scanner.nextLine();
+				System.out.println("���� email: ");
+				String inputEmail = scanner.nextLine();
+				students[studentCount] = new Students(studentIdCount,inputName,inputSurname,inputDateOfBirth,inputAddress,inputAmka,inputPhonenumber,inputEmail);
+				schoolclass[1].addEktiStudent(students[studentCount]);
+				studentCount++;
+				studentIdCount++;
+			}
+		}
+	}else if(choice == 2){System.out.println("����� ����� �� �������� �����������(��������� 1-6 ��� ��� 1�-6� ��������� ����������): ");
+	int inputClass = scanner.nextInt();
+	while(inputClass != 1 && inputClass != 2 && inputClass != 3 && inputClass != 4 && inputClass != 5 && inputClass != 6 ){
+		System.out.println("� ���� ��� �������� ��� ������� ����������� ����");
+		System.out.println("����� ����� �� �������� �����������(��������� 1-6 ��� ��� 1�-6� ��������� ����������: ");
+		 inputClass = scanner.nextInt();
+	}
+	if(inputClass == 1){
+		System.out.print("��������: ");
+		schoolclass[1].printProtiteacher();
+		System.out.print("�������: ");
+		schoolclass[1].printProtistudents();
+	} else if(inputClass == 2){
+		System.out.print("��������: ");
+		schoolclass[1].printDeuterateacher();
+		System.out.print("�������: ");
+		schoolclass[1].printDeuterastudents();
+	} else if(inputClass == 3){
+		System.out.print("��������: ");
+		schoolclass[1].printTrititeacher();
+		System.out.print("�������: ");
+		schoolclass[1].printTritistudents();
+	} else if(inputClass == 4){
+		System.out.print("��������: ");
+		schoolclass[1].printTetartiteacher();
+		System.out.print("�������: ");
+		schoolclass[1].printTetartistudents();
+	} else if(inputClass == 5){
+		System.out.print("��������: ");
+		schoolclass[1].printPemptiteacher();
+		System.out.print("�������: ");
+		schoolclass[1].printPemptistudents();
+	} else if(inputClass == 6){
+		System.out.print("��������: ");
+		schoolclass[1].printEktiteacher();
+		System.out.print("�������: ");
+		schoolclass[1].printEktistudents();
+	}
+	}
+}
+	
+}
