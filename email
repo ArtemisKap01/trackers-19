@@ -1,0 +1,111 @@
+import java.util.Properties;  
+import java.util.Scanner;
+
+import javax.mail.*;  
+import javax.mail.internet.*;  
+
+
+
+public class Sendemail {
+private String user;
+private String password;
+private String host = "smtp.aueb.gr";
+	public void setUser(String user) {
+		this.user = user;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public void send(String reciepient, String subject, String text) {
+		 Properties props = new Properties();  
+		   props.put("mail.smtp.host",host);  
+		   props.put("mail.smtp.auth", "true");  
+		   props.put("mail.smtp.starttls.enable", "true");
+		     
+		   Session session = Session.getDefaultInstance(props,  
+		    new javax.mail.Authenticator() {  
+		      protected PasswordAuthentication getPasswordAuthentication() {  
+		    return new PasswordAuthentication(user,password);  
+		      }  
+		    });  
+		  
+		   //Compose the message  
+		    try {  
+		     MimeMessage message = new MimeMessage(session);  
+		     message.setFrom(new InternetAddress(user));  
+		     message.addRecipient(Message.RecipientType.TO,new InternetAddress(reciepient));  
+		     message.setSubject(subject);  
+		     message.setText(text);  
+		       
+		    //send the message  
+		     Transport.send(message);  
+		  
+		     System.out.println("message sent successfully");  
+		   
+		     } catch (MessagingException e) {e.printStackTrace();}  
+		 }  
+	
+	
+//αποστολή mail//
+	
+	public void TheMailSentTeacher(String[][] tablestudents,String[] teacher){
+		Scanner sc = new Scanner(System.in);
+		
+		Sendemail mail=new Sendemail();
+		System.out.println("Εκχωρίστε το επαγγελματικό σας mail. \n Σημείωση: πρέπει να είναι της μορφής όνομα@aueb.gr για να υποστηριζεται απο την εφαρμογή μας");
+		String ap=sc.nextLine();
+		mail.setUser(ap);
+			
+		System.out.println("Στη συνέχεια εκχωρείστε τον κωδικό σας.");
+		ap= sc.nextLine();
+		mail.setPassword(ap);
+			
+			//d=η στηλη που ειναι το ονομα του καθηγητη της τάξης//
+			int d=0;
+			//s=στηλη που έχει τα ονόματα//
+			int s=0;
+			
+			int i=0;
+			for (; i<=tablestudents.length; i++){
+			mail.send(tablestudents[i][s],"Ενημέρωση", "Ο καθηγητής/τρια της ταξης" + teacher[d] + "του παιδιού σας δυστυχώς υπάρχει πιθανότητα"
+					+ "να έχει κολλησει τον COVID-19 γιαυτό σας ενημερώνουμε ότι για τις επόμενες μέρες δεν θα πραγματποιηθεί μάθημα."
+					+ "Μέσα στις επόμενες 3 μέρες ο διευθυντής του σχολείου θα έρθει σε επαφή μαζί σας για να σας ενημερώσει "
+					+ "για τις αποφάσεις της γενικής συνέλευσης για την επανέναρξη των μαθημάτων. \n"
+					+ "Σε περίπτωση που το παιδί σας εμφανίσει συμπτώματα που σας προβληματίζουν παρακαλώ συμπληρώστε την φόρμα που "
+					+ "υπάρχει στην εφαρμογή του σχολείου για την έγκαιρη αποφυγή εξάπλωσης του ιού.");
+			}
+			
+	}
+	
+	public void TheMailSentStudent(String[] headmaster,String[] teacher, String[] student){
+		Scanner sc = new Scanner(System.in);
+	    Sendemail mail=new Sendemail();
+		System.out.println("Εκχωρίστε το επαγγελματικό σας mail. \n Σημείωση: πρέπει να είναι της μορφής όνομα@aueb.gr για να υποστηριζεται απο την εφαρμογή μας");
+		String ap=sc.nextLine();
+		mail.setUser(ap);
+			
+		System.out.println("Στη συνέχεια εκχωρείστε τον κωδικό σας.");
+		ap= sc.nextLine();
+		mail.setPassword(ap);
+		
+		//column=γραμμη με ονομα//
+		
+		int column=0;
+		mail.send(headmaster[column],"Ενημέρωση","Ο μαθητής "+ student[column]+" εμφανισε συμπτώματα συμβατά με λοίμωξη covid-19. Εξαιτίας "
+				+ "αυτού του προτείναμε να μείνει σε καραντίνα τις επόμενες 7 μέρες. Επικοινωνήστε με τον μαθητή. Αν τα συμπτώματα επιμένουν "
+				+ "συστήνουμε την διεξαγωγή τεστ covid-19.Προτείνουμε επίσης να επικοινωνήσετε με τους γονείς των μαθητών του τμήματος "
+				+ "ώστε να είναι σε διαρκή παρακολούθηση της υγείας των παιδιών τους.Στοιχεία μαθητή: " + student[0] + " \n"+ student[1] +" \n"
+				+ student[2] +" \n"+ student[3] +" \n");
+		
+	    
+	    mail.send(teacher[column], "Ενημέρωση", "Ο μαθητής της τάξης σας, "+ student[column] + " εμφανισε συμπτώματα συμβατά με λοίμωξη covid-19. Εξαιτίας "
+				+ "αυτού του προτείναμε να μείνει σε καραντίνα τις επόμενες 7 μέρες. Προσοχή στους υπόλοιπους μαθητές σας για ύποπτα συμπτώματα. Σε "
+				+ "περίπτωση που πέσει στην αντίληψη σας κάποιος μαθήτής ο οποίος να εμφανίζει συμπτώματα παρόμοια με αυτάπου αναφέρονται στην ενημέρωση υγείας "
+				+ "καλέστε τους γονείς του μαθητή να τον παραλάβουν και συστήνουμε με την χρήση των κωδικών που τους έχουν δωθεί απο τον διευθυντή να συμπληρώσουν την φόρμα"
+				+ "στην εφαρμογή μας που ανιχνεύει τα συμπτώματα για τον covid-19. Στοιχεία μαθητή: " + student[0] + " \n"+ student[1] +" \n"
+				+ student[2] +" \n"+ student[3] +" \n");
+	    
+	    
+	}
+	}
+
