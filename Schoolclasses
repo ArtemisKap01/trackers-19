@@ -1,0 +1,254 @@
+import java.util.Scanner;
+
+public class Schoolclasses {
+	private int year;
+	private Students[] protiDimotikou;
+	private int protiCount = 0;
+	private Students[] deuteraDimotikou;
+	private int deuteraCount = 0;
+	private Students[] tritiDimotikou;
+	private int tritiCount = 0;
+	private Students[] tetartiDimotikou;
+	private int tetartiCount = 0;
+	private Students[] pemptiDimotikou;
+	private int pemptiCount = 0;
+	private Students[] ektiDimotikou;
+	private int ektiCount = 0;
+	private Teachers protiTeacher;
+	private Teachers deuteraTeacher;
+	private Teachers tritiTeacher;
+	private Teachers tetartiTeacher;
+	private Teachers pemptiTeacher;
+	private Teachers ektiTeacher;
+
+
+	Scanner scanner1 = new Scanner(System.in);
+
+		public Schoolclasses(int year, int protiNum, int deuteraNum, int tritiNum, int tetartiNum, int pemptiNum, int ektiNum, Teachers protiTeacher, Teachers deuteraTeacher, Teachers tritiTeacher, Teachers tetartiTeacher, Teachers pemptiTeacher, Teachers ektiTeacher){
+
+			this.year =year;
+			this.protiDimotikou = new Students[protiNum];
+			this.deuteraDimotikou = new Students[deuteraNum];
+			this.tritiDimotikou = new Students[tritiNum];
+			this.tetartiDimotikou = new Students[tetartiNum];
+			this.pemptiDimotikou = new Students[pemptiNum];
+			this.ektiDimotikou = new Students[ektiNum];
+			this.protiTeacher = protiTeacher;
+			this.deuteraTeacher =deuteraTeacher;
+			this.tritiTeacher = tritiTeacher;
+			this.tetartiTeacher = tetartiTeacher;
+			this.pemptiTeacher = pemptiTeacher;
+			this.ektiTeacher = ektiTeacher;
+
+		}
+
+		public void addProtiStudent(Students st) {
+			protiDimotikou[protiCount] = st;
+			protiCount++;
+		}
+
+		public void addDeuteraStudent(Students st) {
+			deuteraDimotikou[deuteraCount] = st;
+			deuteraCount++;
+		}
+
+		public void addTritiStudent(Students st) {
+			tritiDimotikou[tritiCount] = st;
+			tritiCount++;
+		}
+
+		public void addTetartiStudent(Students st) {
+			tetartiDimotikou[tetartiCount] = st;
+			tetartiCount++;
+		}
+
+		public void addPemptiStudent(Students st) {
+			pemptiDimotikou[pemptiCount] = st;
+			pemptiCount++;
+		}
+
+		public void addEktiStudent(Students st) {
+			ektiDimotikou[ektiCount] = st;
+			ektiCount++;
+		}
+
+
+		public boolean isProtiFull() {
+			if(protiCount>protiDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		public boolean isDeuteraFull() {
+			if(deuteraCount>deuteraDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		public boolean isTritiFull() {
+			if(tritiCount>tritiDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		public boolean isTetartiFull() {
+			if(tetartiCount>tetartiDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		public boolean isPemptiFull() {
+			if(pemptiCount>pemptiDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+		public boolean isEktiFull() {
+			if(ektiCount>ektiDimotikou.length) {
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+
+		public int getYear() {
+			return year;
+		}
+
+		public Students[] getProtiStudents() {
+			return protiDimotikou;
+		}
+
+		public Students[] getDeuteraStudents() {
+			return deuteraDimotikou;
+		}
+
+		public Students[] getTritiStudents() {
+			return tritiDimotikou;
+		}
+
+
+		public Students[] getTetartiStudents() {
+			return tetartiDimotikou;
+		}
+
+		public Students[] getPemptiStudents() {
+			return pemptiDimotikou;
+		}
+
+		public Students[] getEktiStudents() {
+			return ektiDimotikou;
+		}
+
+		public Teachers getProtiTeacher() {
+			return protiTeacher;
+		}
+
+		public Teachers getDeuteraTeacher() {
+			return deuteraTeacher;
+		}
+
+		public Teachers getTritiTeacher() {
+			return tritiTeacher;
+		}
+
+		public Teachers getTetartiTeacher() {
+			return tetartiTeacher;
+		}
+
+		public Teachers getPemptiTeacher() {
+			return pemptiTeacher;
+		}
+
+		public Teachers getEktiTeacher() {
+			return ektiTeacher;
+		}
+
+		public void printProtiteacher(){
+			System.out.println(protiTeacher.getFirstName()+" " + protiTeacher.getLastName()+" ");
+		}
+		public void printDeuterateacher(){
+			System.out.println(deuteraTeacher.getFirstName()+" " + deuteraTeacher.getLastName()+" ");
+		}
+		
+		public void printTrititeacher(){
+			System.out.println(tritiTeacher.getFirstName()+" " + tritiTeacher.getLastName()+" ");
+		
+		}
+		public void printTetartiteacher(){
+			System.out.println(tetartiTeacher.getFirstName()+" " + tetartiTeacher.getLastName()+" ");
+		}
+		public void printPemptiteacher(){
+			System.out.println(pemptiTeacher.getFirstName()+" " + pemptiTeacher.getLastName()+" ");
+		}
+		public void printEktiteacher(){
+			System.out.println(ektiTeacher.getFirstName()+" " + ektiTeacher.getLastName()+" ");
+		}
+		
+		public void printProtistudents(){
+			for(int i=0; i<protiCount; i++){
+				if(protiDimotikou[i] != null){
+					System.out.print(protiDimotikou[i].getFirstname()+" " + protiDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+		
+		public void printDeuterastudents(){
+			for(int i=0; i<deuteraCount; i++){
+				if(deuteraDimotikou[i] != null){
+					System.out.print(deuteraDimotikou[i].getFirstname()+" " + deuteraDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+		
+		public void printTritistudents(){
+			for(int i=0; i<tritiCount; i++){
+				if(tritiDimotikou[i] != null){
+					System.out.print(tritiDimotikou[i].getFirstname()+" " + tritiDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+		
+		public void printTetartistudents(){
+			for(int i=0; i<tetartiCount; i++){
+				if(tetartiDimotikou[i] != null){
+					System.out.print(tetartiDimotikou[i].getFirstname()+" " + tetartiDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+		
+		public void printPemptistudents(){
+			for(int i=0; i<pemptiCount; i++){
+				if(pemptiDimotikou[i] != null){
+					System.out.print(pemptiDimotikou[i].getFirstname()+" " + pemptiDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+		
+		public void printEktistudents(){
+			for(int i=0; i<ektiCount; i++){
+				if(ektiDimotikou[i] != null){
+					System.out.print(ektiDimotikou[i].getFirstname()+" " + ektiDimotikou[i].getLastname()+" ");
+				}
+			}
+		}
+}
+
+
