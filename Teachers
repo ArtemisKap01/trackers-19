@@ -1,0 +1,56 @@
+  public class Teachers {
+
+	private int id;
+	private int AFM;
+	private String FirstName;
+	private String LastName;
+	private String Birthdate;
+	private String Phonenumber;
+	private String Email;
+	private String address;
+
+	
+	
+	
+public Teachers(int id, String FirstName, String LastName,int AFM, String Birthdate, String Phonenumber, String Email, String address ){
+		
+		this.id = id;
+		this.FirstName = FirstName;
+		this.AFM = AFM;
+		this.Birthdate = Birthdate;
+		this.LastName = LastName;
+		this.Email = Email;
+		this.Phonenumber = Phonenumber;
+		this.address = address;
+
+	}
+	public int getid() {
+		return id;
+	}
+	public int getAFM() {
+		return AFM;
+	}
+
+	public String getFirstName() {
+		return FirstName;
+	}
+
+	public String getLastName() {
+		return LastName;
+	}
+
+	public String getBirthdate() {
+		return Birthdate;
+	}
+
+	public String getPhonenumber() {
+		return Phonenumber;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
+	public String getaddress() {
+		return address;
+	}
+}
