@@ -217,69 +217,39 @@ public class quizstudents extends JPanel {
     button.addMouseListener(new MouseAdapter() {
     	@Override
     	public void mouseClicked(MouseEvent e) {
-    		//Positive//
-    		if((btncon1.isSelected()) && (btn1a.isSelected())  && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected()) && (btn5a.isSelected())&& (btn6a.isSelected())&& (btn7a.isSelected())&& (btn8a.isSelected())&& (btn9a.isSelected())&& (btn10a.isSelected())) {
+    			//Positive//
+    		if((btncon1.isSelected()) && (btn1a.isSelected())  && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected()) && (btn5a.isSelected())&&
+    				(btn6a.isSelected())&& (btn7a.isSelected())&& (btn8a.isSelected())&& (btn9a.isSelected())&& (btn10a.isSelected()) ||
+    				(btncon1.isSelected()) && (btn1a.isSelected()) && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected()) && 
+    				(btn5a.isSelected()) && (btn6a.isSelected()) && (btn7a.isSelected()) ||
+    				btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7b.isSelected() ||
+    				btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn7a.isSelected() && btn6b.isSelected() ||
+    				btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn5b.isSelected() ||
+    				btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn4b.isSelected() ||
+    				btn1a.isSelected() && btn2a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn3b.isSelected() ||
+    				btn1a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn2b.isSelected() ||
+    				btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn1b.isSelected() ||
+    				//If one of the first seven are picked, the students is required to go into quarantine for 14 days and test for Covid-19 
+    				btn1a.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected() ||
+    				btn2a.isSelected() && btn1b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected()||
+    				btn3a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected() ||
+    				btn4a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn5b.isSelected() && btn6b.isSelected() && btn7b.isSelected() ||
+    				btn5a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn6b.isSelected() && btn7b.isSelected() ||
+    				btn6a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn7b.isSelected() ||
+    				btn7a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected()) {
 		      JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-    		}
-		    if((btncon1.isSelected()) && (btn1a.isSelected()) && (btn2a.isSelected()) && (btn3a.isSelected()) && (btn4a.isSelected()) && (btn5a.isSelected()) && (btn6a.isSelected()) && (btn7a.isSelected())) {
-		      JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		      }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn7a.isSelected()  && btn6b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn5b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected()  && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn4b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn3b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected()  && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn2b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if ( btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn1b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		  //If one of the first four are picked, the teacher is required to go into quarantine for 14 days and test for Covid-19// 
-		    if (btn1a.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected()) {
-			   JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		   }
-		    if(btn2a.isSelected() && btn1b.isSelected() && btn3b.isSelected() && btn4b.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
-		    if (btn3a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn4b.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
-		    if( btn4a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected()) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
-		    if(btn5a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn6b.isSelected() && btn7b.isSelected() ) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
-		    if(btn6a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn7b.isSelected() ) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
-		    if(btn7a.isSelected() && btn1b.isSelected() && btn2b.isSelected() && btn3b.isSelected() && btn4b.isSelected() && btn5b.isSelected() && btn6b.isSelected()  ) {
-		    	JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή!", JOptionPane.OK_OPTION);
-		    }
+		      JEmail msframe = new JEmail();
+		  		msframe.setVisible(true);  		
+    		}		   		    		    		   		   		   		   		 		    		   		   		   		    		   		    
 		    //Additional Options//
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected()  && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn4b.isSelected()) {
+		    if (btn1a.isSelected() && btn2a.isSelected() && btn3a.isSelected()  && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn4b.isSelected() ||
+		    		btn1a.isSelected() && btn2a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn3b.isSelected() ||
+		    		btn1a.isSelected()  && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn2b.isSelected() ||
+		    		btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn1b.isSelected()) {
 		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected() && btn2a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn3b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if (btn1a.isSelected()  && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn2b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
-		    if ( btn2a.isSelected() && btn3a.isSelected() && btn4a.isSelected() && btn5a.isSelected() && btn6a.isSelected() && btn7a.isSelected() && btn1b.isSelected()) {
-		    	 JOptionPane.showMessageDialog(null, "Καραντίνα για 14 ημέρες και τεστ COVID-19", "Προσοχή! Ύποπτο κρούσμα.", JOptionPane.OK_OPTION);
-		    }
+		    	 JEmail msframe = new JEmail();
+			  		msframe.setVisible(true);  
+		    }		    		   		   
 		    //Negative//
     	    if((btncon2.isSelected()) && (btn1b.isSelected()) && (btn2b.isSelected()) && (btn3b.isSelected())&& (btn4b.isSelected())&& (btn5b.isSelected())&& (btn6b.isSelected())&& (btn7b.isSelected())&& (btn8b.isSelected())&& (btn9b.isSelected())&& (btn10b.isSelected())) {
     		 JOptionPane.showMessageDialog(null, "Παρακολουθήστε την κατάσταση της υγεία σας, σε περίπτωση εμφάνισης κάποιων συμπτωμάτων", "Ενημέρωση", JOptionPane.OK_OPTION);;
