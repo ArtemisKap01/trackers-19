@@ -2,6 +2,7 @@ import java.awt.EventQueue;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
@@ -11,6 +12,9 @@ public class Main {
 	public static JTextField txtUsername;
 	public static JPasswordField txtPassword;
 	public static JLabel lblLoginMessage;
+	public static JTextField mail;
+	public static JPasswordField mpass;
+	public static JLabel lblpass;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -30,10 +34,10 @@ public class Main {
 				    frame.dispose();
 					FrameDashboard hframe = new FrameDashboard();
 				    hframe.setVisible(true);
-				   
+				}   
 				//If user inputs correct
 				//Students
-				}
+				
 			    if(txtUsername.getText().equals("") || txtUsername.getText().equals("Username")|| 
 				txtPassword.getText().equals("") || txtPassword.getText().equals("Password")) {			
 				JOptionPane.showMessageDialog(null, "Παρακαλώ συμπληρώστε όλα τα απαραίτητα πεδία.");
@@ -65,12 +69,16 @@ public class Main {
          class FrameDashboard extends Main{
         	 
          }
+		class JEmail extends Main{
+			
+		}		
 		
-	String teachermail="teacher";
-	String passwordteacher="pass";
-			JEmail k=new JEmail();
+		String teachermail="teacher";
+		String passwordteacher="pass";
+		
+			/*JEmail k=new JEmail();
 			JTextField y = k.mail;
-			JPasswordField x = k.mpass;
+			JPasswordField x = k.mpass;*/
 			
 			//if (x.getText().equals(passwordteacher) && y.getText().equals(teachermail)) {
 			//JOptionPane.showMessageDialog(null, "", "Επιβεβαίωση", JOptionPane.OK_OPTION);	
@@ -81,5 +89,30 @@ public class Main {
 			//}
 	
 	}
-
+	//auto to kommati den to xv kanei akoma na doulepsei, mexri tin grammh 74 douleuei kanonika
+	public static void mainEmail(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					JEmail eframe = new JEmail();
+					eframe.setVisible(true);
+					JEmail.mabtn.addMouseListener(new MouseAdapter() {		
+						@Override
+						public void mouseClicked(MouseEvent arg1) {						             
+							 if (mail.getText().equals("email") && mpass.getText().equals("pass") ) {								 
+								lblpass.setText("");
+								 JOptionPane.showMessageDialog(null, "Επιβεβαίωση");
+					            eframe.dispose(); 
+					         }
+							 else {
+								 JOptionPane.showMessageDialog(null, "Αποτυχία");
+							 }
+						}
+					});   
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
 }
