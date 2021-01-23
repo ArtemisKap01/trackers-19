@@ -40,15 +40,12 @@ public class FramLogin extends JFrame {
 	
     private Image logoimg = new ImageIcon(FramLogin.class.getResource("icons/Science-University-icon.png")).getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH);
     private Image passimg = new ImageIcon(FramLogin.class.getResource("icons/eye(1).png")).getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH);
-	
-    
+	   
     private JPanel contentPane;
 	private JTextField txtUsername;
 	private JPasswordField txtPassword;
 	private JLabel lblLoginMessage = new JLabel("");
-	private JLabel lbllogin = new JLabel("LOG IN");
-	
-
+	private JLabel lbllogin = new JLabel("LOG IN");	
 	/**
 	 * Launch the application.
 	 */
@@ -285,10 +282,7 @@ public class FramLogin extends JFrame {
 		     public void mouseExited(MouseEvent arg0) {
 		    	 Exit.setForeground(Color.WHITE);
 		     }
-	});
-		
-	}
-	
-	 
+	});		
+	}		 
 }
 
