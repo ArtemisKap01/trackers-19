@@ -20,7 +20,7 @@ private JTextArea txtPad = new JTextArea();
 	JLabel lblNewLabel = new JLabel("Εγχειρίδιο/Οδηγίες χρήσης");
 	lblNewLabel.setForeground(new Color(210, 105, 30));
 	lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
-	lblNewLabel.setBounds(25, 25, 244, 32);
+	lblNewLabel.setBounds(21, 15, 256, 32);
 	add(lblNewLabel);
 	  
 //create & add textArea
@@ -77,7 +77,7 @@ private JTextArea txtPad = new JTextArea();
 	scroll.setBorder(new EmptyBorder(0, 0, 0, 0));
 	scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 	scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-	scroll.setBounds(0, 54, 592, 398); 	
+	scroll.setBounds(10, 54, 592, 398); 	
 	JScrollBar verticalScrollBar = scroll.getVerticalScrollBar();
     JScrollBar horizontalScrollBar = scroll.getHorizontalScrollBar();
     verticalScrollBar.setValue(0);
