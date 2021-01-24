@@ -5,6 +5,8 @@ import java.awt.Color;
 import javax.swing.border.EmptyBorder;
 
 public class helppanel extends JPanel {
+private static JScrollPane scroll;
+private JTextArea txtPad = new JTextArea();
 
 	/**
 	 * Create the panel.
