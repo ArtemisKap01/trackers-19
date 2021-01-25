@@ -24,12 +24,12 @@ private JTextArea txtPad = new JTextArea();
 	add(lblNewLabel);
 	  
 //create & add textArea
-    txtTest = new JTextArea();
-    txtTest.setEditable(false);
-    txtTest.setTabSize(10);
-    txtTest.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 11));
-    txtTest.setRows(30);
-    txtTest.setText("Εδώ θα βρείτε πληροφορίες για τον τρόπο λειτουργίας της πλατφόρμας.
+    txtPad = new JTextArea();
+    txtPad.setEditable(false);
+    txtPad.setTabSize(10);
+    txtPad.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 11));
+    txtPad.setRows(30);
+    txtPad.setText("Εδώ θα βρείτε πληροφορίες για τον τρόπο λειτουργίας της πλατφόρμας.
 +"Σκοπός αυτού του προγράμματος είναι η έγκαιρη ιχνηλάτηση πιθανού κρούσματος , η  διαχείριση και αυτόματη ειδοποίηση των επαφών σας."
 +"Οι κωδικοί και τα username για το login των μαθητών και των δασκάλων θα δημιουργούνται και θα δίνονται από τον διευθυντή στην αρχή της σχολικής χρονιάς."		
 +"Καλείστε να απαντήσετε σε όλες τις ερωτήσεις που θα βρείτε στην ενότητα "Ερωτηματολόγιο"."
@@ -67,12 +67,12 @@ private JTextArea txtPad = new JTextArea();
 +"διαδρομές που μετείχε και έγιναν κατά τις 48 ώρες πριν την έναρξη των συμπτωμάτων"
 +"(ή έως και 10 ημέρες μετά από αυτήν), θα πρέπει να γίνει ειδική εκτίμηση κινδύνου για να" 
 +"οριστούν οι στενές επαφές.");
-    txtTest.setCaretPosition(0);
+    txtPad.setCaretPosition(0);
     txtTest.setBackground(new Color(222, 184, 135));
     txtTest.setBounds(21, 55, 589, 427);
 	add(txtTest);
 // create & add scrollPane
-	scroll = new JScrollPane(txtTest);
+	scroll = new JScrollPane(txtPad);
 	scroll.setLocation(new Point(0, 0));
 	scroll.setBorder(new EmptyBorder(0, 0, 0, 0));
 	scroll.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
