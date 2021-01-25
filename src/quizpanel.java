@@ -247,7 +247,7 @@ public class quizpanel extends JPanel {
     lblNewLabel_1.setBounds(20, 83, 461, 34);
     add(lblNewLabel_1);
     
-    JLabel ques1 = new JLabel("1. Bήχα"");
+    JLabel ques1 = new JLabel("1. Bήχα");
     ques1.setFont(new Font("Lucida Sans Unicode", Font.PLAIN, 13));
     ques1.setBounds(24, 164, 78, 14);
     add(ques1);
