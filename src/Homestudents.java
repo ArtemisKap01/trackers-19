@@ -26,7 +26,7 @@ public class Homestudents extends JPanel {
     setLayout(null);
     setVisible(true);
     
-    JLabel lblNewLabel = new JLabel("Καλώς Ήρθατε!");
+    JLabel lblNewLabel = new JLabel(" ΞΞ±Ξ»ΟΟ‚ Ξ‰ΟΞΈΞ±Ο„Ξµ!");
     lblNewLabel.setForeground(new Color(30, 144, 255));
     lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 25));
     lblNewLabel.setBounds(107, 41, 196, 52);
@@ -37,7 +37,7 @@ public class Homestudents extends JPanel {
     add(hellolbl);
     hellolbl.setIcon(new ImageIcon(hlimg));
     
-    JLabel lblNewLabel_1 = new JLabel("H εφαρμογή αυτή βοηθάει στον εντοπισμό κρουσμάτων, ");
+    JLabel lblNewLabel_1 = new JLabel("H ΞµΟ†Ξ±ΟΞΌΞΏΞ³Ξ® Ξ±Ο…Ο„Ξ® Ξ²ΞΏΞ·ΞΈΞ¬ΞµΞΉ ΟƒΟ„ΞΏΞ½ ΞµΞ½Ο„ΞΏΟ€ΞΉΟƒΞΌΟ ΞΊΟΞΏΟ…ΟƒΞΌΞ¬Ο„Ο‰Ξ½,");
     lblNewLabel_1.setHorizontalAlignment(SwingConstants.TRAILING);
     lblNewLabel_1.setVerticalAlignment(SwingConstants.TOP);
     lblNewLabel_1.setVerticalTextPosition(SwingConstants.TOP);
@@ -45,12 +45,12 @@ public class Homestudents extends JPanel {
     lblNewLabel_1.setBounds(20, 175, 435, 28);
     add(lblNewLabel_1);
     
-    JLabel lblNewLabel_2 = new JLabel("απαντώντας το  ερωτηματολόγιο που σας δίνεται. Αν έχετε");
+    JLabel lblNewLabel_2 = new JLabel("Ξ±Ο€Ξ±Ξ½Ο„ΟΞ½Ο„Ξ±Ο‚ Ο„ΞΏ  ΞµΟΟ‰Ο„Ξ·ΞΌΞ±Ο„ΞΏΞ»ΟΞ³ΞΉΞΏ Ο€ΞΏΟ… ΟƒΞ±Ο‚ Ξ΄Ξ―Ξ½ΞµΟ„Ξ±ΞΉ. Ξ‘Ξ½ Ξ­Ο‡ΞµΟ„Ξµ");
     lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
     lblNewLabel_2.setBounds(65, 186, 390, 35);
     add(lblNewLabel_2);
     
-    JLabel lblNewLabel_3 = new JLabel("κάποια απορία, μπορείτε να δείτε τις οδηγίες χρήσης.");
+    JLabel lblNewLabel_3 = new JLabel("ΞΊΞ¬Ο€ΞΏΞΉΞ± Ξ±Ο€ΞΏΟΞ―Ξ±, ΞΌΟ€ΞΏΟΞµΞ―Ο„Ξµ Ξ½Ξ± Ξ΄ΞµΞ―Ο„Ξµ Ο„ΞΉΟ‚ ΞΏΞ΄Ξ·Ξ³Ξ―ΞµΟ‚ Ο‡ΟΞ®ΟƒΞ·Ο‚.");
     lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 15));
     lblNewLabel_3.setBounds(65, 210, 378, 28);
     add(lblNewLabel_3);
