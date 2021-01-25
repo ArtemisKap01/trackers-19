@@ -152,7 +152,7 @@ public class FramedashTeach extends JFrame {
 		panel_SignOut.addMouseListener(new PanelButtonMouseAdapter(panel_SignOut){
 		@Override
 	        public void mouseClicked(MouseEvent e) {
-			 if(JOptionPane.showConfirmDialog(null, "Είστε σίγουτοι πως θέλετε να αποσυνδεθείτε?") == 0) {
+			 if(JOptionPane.showConfirmDialog(null, "Ξ•Ξ―ΟƒΟ„Ξµ ΟƒΞ―Ξ³ΞΏΟ…ΟΞΏΞΉ Ο€Ο‰Ο‚ ΞΈΞ­Ξ»ΞµΟ„Ξµ Ξ½Ξ± Ξ±Ο€ΞΏΟƒΟ…Ξ½Ξ΄ΞµΞΈΞµΞ―Ο„Ξµ?") == 0) {
 					menuClicked(panel_SignOut);	
 					FramedashTeach.this.dispose();
 	        }
@@ -191,7 +191,7 @@ public class FramedashTeach extends JFrame {
 		panel_help.setLayout(null);
 		
 		JLabel lblNewLabel_2 = new JLabel("\u039F\u03B4\u03B7\u03B3\u03AF\u03B5\u03C2 \u03C7\u03C1\u03AE\u03C3\u03B5\u03C9\u03C2");
-		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);Γ…ΓΓ³Γ΄Γ¥
 		lblNewLabel_2.setFont(new Font("Dialog", Font.BOLD, 16));
 		lblNewLabel_2.setBounds(69, 7, 141, 31);
 		panel_help.add(lblNewLabel_2);
@@ -213,7 +213,7 @@ public class FramedashTeach extends JFrame {
 		XLbl.addMouseListener(new MouseAdapter() {
 		     @Override
 		     public void mouseClicked(MouseEvent e) {
-		    	 if(JOptionPane.showConfirmDialog(null, "Είστε σίγουροι πως θέλετε να κλείσεται την εφάρμογη?", "Κλείσιμο", JOptionPane.YES_NO_OPTION) == 0) {
+		    	 if(JOptionPane.showConfirmDialog(null, " Ξ•Ξ―ΟƒΟ„Ξµ ΟƒΞ―Ξ³ΞΏΟ…ΟΞΏΞΉ Ο€Ο‰Ο‚ ΞΈΞ­Ξ»ΞµΟ„Ξµ Ξ½Ξ± ΞΊΞ»ΞµΞ―ΟƒΞµΟ„Ξµ Ο„Ξ·Ξ½ ΞµΟ†Ξ±ΟΞΌΞΏΞ³Ξ®?", "ΞΞ»ΞµΞ―ΟƒΞΉΞΌΞΏ", JOptionPane.YES_NO_OPTION) == 0) {
 		    		FramedashTeach.this.dispose(); 
 		    	 }
 		}
