@@ -64,8 +64,8 @@ public class Menu {
             System.out.println("4 - Display all teachers");
             System.out.println("5 - Display all students");
             System.out.println("6 - Display all classes");
-            System.out.println("7 - Exit");
-
+            System.out.println("7 Display all classes with teachers and students");
+            System.out.println("8 - Exit");
             System.out.println("");
             String option = Utilities.promptUserForText("> ");
             switch (option) {
@@ -104,17 +104,21 @@ public class Menu {
                     List<SchoolClass> schoolClasses = SchoolClassDbHelper.loadAllSchoolClasses();
                     SchoolClassDbHelper.displaySchoolClasses(schoolClasses);
                     break;
-
                 case "7":
-                    exit = true;
-                    break;
-
-                case "test":
-                    testMenu();
+                    System.out.println("\n");
+                    System.out.println(Utilities.getSeparator());
+                    displayAll();
                     break;
 
                 default:
                     break;
+
+
+                    case "8":
+                    exit = true;
+                    break;
+
+
             }
         } while (!exit);
     }
@@ -238,7 +242,7 @@ public class Menu {
         System.out.println("2 - My data");
     }
 
-    private static void testMenu() {
+    private static void displayAll() {
         List<SchoolClass> schoolClasses = SchoolClassDbHelper.loadAllSchoolClasses();
 
         for (SchoolClass schoolClass : schoolClasses) {
