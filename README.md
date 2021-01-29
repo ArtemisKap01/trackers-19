@@ -1,19 +1,20 @@
 # trackers-19
 (Εκτελούμε την FrameLogin.)
-Ξεκινάτε την εφαρμογή από το JFrame FrameLogin, όπου εκχωρείτε το Username και το Password που σας δίνεται.
-Για να μπείτε στο μενού του διευθυντή:
+
+Ξεκινάτε την εφαρμογή από το JFrame FrameLogin(που βρίσκεται στο φάκελο src), όπου εκχωρείτε το Username και το Password που σας δίνεται.
+Για να μπείτε στο μενού του διευθυντή(FrameDashboard):
 
 Username:admin
 
 Password:admin
 
-Για να μπείτε στο μενού των δασκάλων, χρησιμποείται ένα από τα usernames και ένα από τα  passwords. Για παράδειγμα:
+Για να μπείτε στο μενού των δασκάλων(FramedashTeach), χρησιμποείται ένα από τα usernames και ένα από τα  passwords. Για παράδειγμα:
 
 Username:KGutierrez
 
 Password:8567A28D-18DB-5D99-B5E7-0E316ACAAE62
 
-Παρομοίως, για να μπείτε στο μενού των δασκάλων, χρησιμποείται ένα από τα usernames και ένα από τα passwords. Για παράδειγμα:
+Παρομοίως, για να μπείτε στο μενού των μαθητών(Framedashstudents), χρησιμποείται ένα από τα usernames και ένα από τα passwords. Για παράδειγμα:
 
 Username:LJenkins
 
