@@ -35,4 +35,4 @@ Password:A3E1F706-C7A6-E14C-4D3D-3403BA97C128
 με το όνομα "activation" και "javax.mail",  τα οποία βρίσκονται ξεχωριστά από το φάκελο src.
 
 
-![ScreenShot](/Screenshot(12).png)
+![ScreenShot](/trackers-19/Screenshot(12).png)
