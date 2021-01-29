@@ -35,4 +35,10 @@ Password:A3E1F706-C7A6-E14C-4D3D-3403BA97C128
 με το όνομα "activation" και "javax.mail",  τα οποία βρίσκονται ξεχωριστά από το φάκελο src.
 
 
-![ScreenShot](/trackers-19/Screenshot(12).png)
+![Screenshot (3)](https://user-images.githubusercontent.com/72870438/106335281-25dfb880-6295-11eb-90a0-8dc961e96803.png)
+
+![Screenshot (12)](https://user-images.githubusercontent.com/72870438/106335196-fb8dfb00-6294-11eb-9b64-f0a03c0e7217.png)
+
+![Screenshot (13)](https://user-images.githubusercontent.com/72870438/106335249-182a3300-6295-11eb-9d48-1a345a5589e4.png)
+
+
